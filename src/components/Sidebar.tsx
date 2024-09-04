@@ -5,13 +5,14 @@ import { FaHome, FaAddressBook, FaArrowLeft, FaArrowRight } from "react-icons/fa
 interface SidebarProps {
     isExpanded: boolean;
     onToggle: () => void;
+    className?: string;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ isExpanded, onToggle }) => {
+const Sidebar: React.FC<SidebarProps> = ({ isExpanded, onToggle, className }) => {
     return (
         <aside
             className={`bg-white border-r border-r-gray-500 h-full p-4 fixed transition-all duration-300 ${isExpanded ? "w-44" : "w-24"
-                }`}
+                } ${className}`}
         >
             <button
                 onClick={onToggle}

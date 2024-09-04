@@ -30,10 +30,10 @@ const ContactList: React.FC<ContactListProps> = ({ onEditContact }) => {
                 contacts.map((contact) => (
                     <div
                         key={contact.id}
-                        className="border rounded p-4 mb-2 flex justify-between items-center"
+                        className="border rounded p-4 mb-2 flex justify-between items-center flex-wrap"
                     >
                         <div>{contact.Fname + " " + contact.Lname}</div>
-                        <div className="flex space-x-2">
+                        <div className="flex space-x-2 mt-2">
                             <button
                                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
                                 onClick={() => onEditContact(contact)}
