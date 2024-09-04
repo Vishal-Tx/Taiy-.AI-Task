@@ -1,45 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview:
 
-## Available Scripts
+The project is a COVID-19 contact management app built using React and TypeScript. 
 
-In the project directory, you can run:
+## Prerequisites:
 
-### `npm start`
+1. Clone the Repository first.
+2. Make sure you have Node.js installed on your machine.
+3. Ensure you have the necessary dependencies installed by running npm install or yarn install.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Running the App
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### To run the app, follow these steps:
 
-### `npm test`
+1. Navigate to the project root directory.
+2. Run the command npm start or yarn start (depending on your package manager).
+3. Open your web browser and navigate to http://localhost:3000.
+   
+The app should now be running and accessible in your web browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Endpoints
 
-### `npm run build`
+### The app uses the following API endpoints:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+World wide data of cases: https://disease.sh/v3/covid-19/all
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This API endpoint returns the covid cases data like total cases, total deaths and total recovered.
 
-### `npm run eject`
+Country Specific data of cases: https://disease.sh/v3/covid-19/countries
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This API return the covid cases data per country, data like active cases, country population, total recovered, deaths etc.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Graph data for cases with date:
+https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This API returns the suitable covid related data like cases, recovered and deaths data date wise perfect for the graph visualisation.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
