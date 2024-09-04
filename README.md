@@ -37,7 +37,3 @@ https://disease.sh/v3/covid-19/historical/all?lastdays=all
 
 This API returns the suitable covid related data like cases, recovered and deaths data date wise perfect for the graph visualisation.
 
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
