@@ -8,10 +8,7 @@ import "./index.css";
 
 const queryClient = new QueryClient();
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <QueryClientProvider client={queryClient}>
@@ -19,4 +16,5 @@ root.render(
       </QueryClientProvider>
     </Provider>
   </React.StrictMode>,
+  document.getElementById("root")
 );
