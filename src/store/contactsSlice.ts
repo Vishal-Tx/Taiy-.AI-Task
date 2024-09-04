@@ -2,9 +2,11 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface Contact {
     id: string;
-    name: string;
+    Fname: string;
+    Lname: string;
     email: string;
     phone: string;
+    status: "active" | "inactive";
 }
 
 interface ContactsState {
